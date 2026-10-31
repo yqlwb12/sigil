@@ -1,5 +1,7 @@
 # sigil
 
+[![tests](https://github.com/yqlwb12/sigil/actions/workflows/ci.yml/badge.svg)](https://github.com/yqlwb12/sigil/actions/workflows/ci.yml)
+
 **A deterministic avatar for any string.** SHA-256 in, mirrored grid out: the same name gives the same sigil, forever, on any machine and in any terminal.
 
 ```console

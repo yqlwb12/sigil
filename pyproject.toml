@@ -8,7 +8,7 @@ description = "A deterministic avatar for any string: SHA-256 in, mirrored grid 
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
-authors = [{ name = "moonterm contributors" }]
+authors = [{ name = "yqlwb12" }]
 keywords = ["identicon", "avatar", "hash", "terminal", "pixel-art"]
 classifiers = [
     "Environment :: Console",
