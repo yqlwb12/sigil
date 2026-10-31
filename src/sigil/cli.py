@@ -39,7 +39,10 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     if args.json:
-        payload = [create(name, args.size) for name in args.names]
+        try:
+            payload = [create(name, args.size) for name in args.names]
+        except ValueError as exc:
+            parser.error(str(exc))
         sys.stdout.write(json.dumps(payload, indent=2, ensure_ascii=False) + "\n")
         return 0
 

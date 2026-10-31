@@ -10,7 +10,7 @@ SHA-256 and is mirrored down the middle.
 
 from .core import MAX_SIZE, MIN_SIZE, create, digest, grid, palette, render
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 __all__ = [
     "MAX_SIZE",

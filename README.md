@@ -74,7 +74,7 @@ hash, so nothing has to be stored anywhere.
 $ PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
-27 tests: determinism, left-right symmetry (the invariant that makes a sigil look like
+28 tests: determinism, left-right symmetry (the invariant that makes a sigil look like
 a sigil), grid and colour validation, ASCII-only plain output, and the JSON payload
 against `hashlib` directly.
 

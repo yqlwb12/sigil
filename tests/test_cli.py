@@ -66,6 +66,11 @@ class ArgumentTest(unittest.TestCase):
             call("-s", "4", "alice")
         self.assertEqual(caught.exception.code, 2)
 
+    def test_json_path_rejects_even_size_too(self):
+        with self.assertRaises(SystemExit) as caught:
+            call("--json", "-s", "4", "alice")
+        self.assertEqual(caught.exception.code, 2)
+
     def test_missing_name(self):
         with self.assertRaises(SystemExit) as caught:
             call()
